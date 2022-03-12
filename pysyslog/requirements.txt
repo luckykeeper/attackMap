@@ -1,0 +1,4 @@
+Flask==2.0.2
+Flask_Cors==3.0.10
+geoip2==4.4.0
+pymongo==3.12.1
