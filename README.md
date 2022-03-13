@@ -20,7 +20,7 @@ Organizing source code and will be update in few days……
 - [如何使用](#如何使用)
 - [预览](#预览)
 - [其它开源项目](#其它开源项目)
-- [Stargazers over time ](#Stargazers over time )
+- [Stargazers_over_time](#Stargazers over time )
 
 # 如何使用
 
