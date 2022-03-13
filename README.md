@@ -20,15 +20,38 @@ Organizing source code and will be update in few days……
 - [如何使用](#如何使用)
 - [预览](#预览)
 - [其它开源项目](#其它开源项目)
+- [Stargazers over time ](#Stargazers over time )
 
 # 如何使用
+
+[返回导航](#导航)
 
 请参考这里的文档（还没做233）
 
 # 预览
+
+[返回导航](#导航)
 
 本项目没有在线 demo ，效果可以参考[这里](https://atkmap.luckykeeper.site/)（和实际效果略有差别）
 
 以下是实际运行截图（图中的敏感信息已经打码处理）
 
 ![attackMap01](./images/attackMap01.png)
+
+# 其它开源项目
+
+[返回导航](#导航)
+
+> 使用 Ren'Py 重制 LOVEPOTION SIXTYNINE ，并加以汉化和全平台移植
+>
+> https://github.com/luckykeeper/LOVE69_renpy_remaster 
+>
+> 个人博客容器镜像
+>
+> https://github.com/luckykeeper/docker_plumemo
+
+# Stargazers over time 
+
+[返回导航](#导航)
+
+![ GitHub Stargazers over time](https://starchart.cc/luckykeeper/attackMap.svg)
