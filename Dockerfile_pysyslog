@@ -25,5 +25,5 @@ RUN echo "@reboot nohup python3 /usr/src/app/pysyslog/apiv1.py > /dev/null 2>&1 
 
 # 相关环境变量
 ENV debug=False syslog_host='0.0.0.0' syslog_port='514' MongoDB_host='127.0.0.1' MongoDB_port='27017' MongoDB_user='root' MongoDB_password='zr2Nzu0BIXPx2C1i' MongoDB_Syslog_dbName='orgData' MongoDB_Syslog_col='syslog' MongoDB_Backup_col='backup' MongoDB_show_dbName='show' MongoDB_show_col='bigScreen' outputCsvName='攻击IP.csv' deletePeriods='365' email_sender='' mail_Password='' mail_Receiver='' email_sender_name='attackMap' email_Receiver_name='attackMapAdmin' email_smtp_server='smtp.qq.com' email_smtp_server_port='465' destLocX='115.506601' destLocY='38.926478'
-
+EXPOSE 514/udp 21109/tcp
 ENTRYPOINT  /bin/sh /usr/src/app/pysyslog/run.sh ${debug} ${syslog_host} ${syslog_port} ${MongoDB_host} ${MongoDB_user} ${MongoDB_password} ${MongoDB_Syslog_dbName} ${MongoDB_Syslog_col} ${MongoDB_Backup_col} ${MongoDB_show_dbName} ${MongoDB_show_col} ${outputCsvName} ${deletePeriods} ${email_sender} ${mail_Password} ${mail_Receiver} ${email_sender_name} ${email_smtp_server} ${email_smtp_server_port} ${destLocX} ${destLocY}
