@@ -9,7 +9,7 @@
 # last modified:2022-03-14
 # HBFU YYDS!
 
-import smtplib
+import smtplib,os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
@@ -18,15 +18,19 @@ import datetime
 
 ################################ 基础设定 ################################
 ## 调试模式 True = ON; False = OFF
-debug = False
+if "True" not in os.environ['debug']:
+	debug_choice = False
+else:
+	debug_choice = True
+debug = debug_choice
 
 # 发送邮件的名称
-sendFileName = '攻击IP.csv' # 默认：'攻击IP.csv'
+sendFileName = os.environ['outputCsvName'] # 默认：'攻击IP.csv'
 
 # 邮件 smtp 服务相关设定
-sender='username@address.domain'   # 发件人邮箱账号，如果使用非QQ邮箱（foxmail也是QQ邮箱）需要到下面修改服务器地址
-mailPassword = 'password'  # 发件人邮箱密码，QQ邮箱需要使用授权码而不是密码
-user='username@address.domain'  # 收件人邮箱账号
+sender = os.environ['email_sender']   # 发件人邮箱账号，如果使用非QQ邮箱（foxmail也是QQ邮箱）需要到下面修改服务器地址
+mailPassword = os.environ['mail_Password']  # 发件人邮箱密码，QQ邮箱需要使用授权码而不是密码
+user = os.environ['mail_Receiver']  # 收件人邮箱账号
 
 # 邮件标题
 now_time = datetime.datetime.today().strftime('%Y-%m-%d')
@@ -41,8 +45,8 @@ def mail():
     ret=True
     try:
         msg = MIMEMultipart()
-        msg['From']=formataddr(["Luckykeeper",sender])  # 括号里的对应发件人昵称、请按实际修改
-        msg['To']=formataddr(["Luckykeeper",user])              # 括号里的对应收件人昵称、请按实际修改
+        msg['From']=formataddr([os.environ['email_sender_name'],sender])  # 括号里的对应发件人昵称、请按实际修改
+        msg['To']=formataddr([os.environ['email_Receiver_name'],user])              # 括号里的对应收件人昵称、请按实际修改
         subject =  title # 主题
         msg['Subject']= Header(subject, 'utf-8')  # 邮件的主题
 
@@ -54,7 +58,7 @@ def mail():
         msg.attach(attach)
 
  
-        server=smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是465
+        server=smtplib.SMTP_SSL(os.environ['email_smtp_server'], int(os.environ['email_smtp_server_port']))  # 发件人邮箱中的SMTP服务器，端口是465
         server.login(sender, mailPassword)  # 括号中对应的是发件人邮箱账号、邮箱密码
         server.sendmail(sender,[user,],msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         server.quit()  # 关闭连接

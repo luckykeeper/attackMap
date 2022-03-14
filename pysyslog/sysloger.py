@@ -1,33 +1,38 @@
-# Py3Syslog 记录组件
+# Py3Syslog 记录组件 For Docker
 # ENV: Python 3.5+
 # 依赖：socketserver pymongo re
 # pip install -r requirements.txt
 
 # Author:Luckykeeper <luckykeeper@luckykeeper.site>|https://luckykeeper.site>
-# last modified:2022-03-12
+# last modified:2022-03-14
 # HBFU YYDS!
 
 import re # 正则
 import socketserver # 使用 socketserver 做服务器
 from pymongo import MongoClient # MongoDB 连接器
+import os # 读取 Docker 变量
 
 ################################ 基础设定 ################################
 ## 调试模式 True = ON; False = OFF
-debug = False
+if "True" not in os.environ['debug']:
+	debug_choice = False
+else:
+	debug_choice = True
+debug = debug_choice
 
 ## Py3Syslog Server 设定
 # 默认监听本机 UDP 514 端口
-HOST = '0.0.0.0'
-PORT = int(514)
+HOST = os.environ['syslog_host']
+PORT = int(os.environ['syslog_port'])
 
 ## MongoDB 数据库设定
-MongoDB_host = "127.0.0.1" # 数据库IP 形如："127.0.0.1"
-MongoDB_port = int(27017) # 数据库端口 形如："int(12345)"
-MongoDB_user = "root" # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
-MongoDB_password = "password" # 数据库密码 形如："password"
+MongoDB_host = os.environ['MongoDB_host'] # 数据库IP 形如："127.0.0.1"
+MongoDB_port = int(os.environ['MongoDB_port']) # 数据库端口 形如："int(12345)"
+MongoDB_user = os.environ['MongoDB_user'] # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
+MongoDB_password = os.environ['MongoDB_password'] # 数据库密码 形如："password"
 ### 要写入的数据库名称和 collection
-MongoDB_dbName = "orgData" # 数据库名称 默认："orgData"
-MongoDB_col = "syslog" # collection 名称 默认："syslog"
+MongoDB_dbName = os.environ['MongoDB_Syslog_dbName'] # 数据库名称 默认："orgData"
+MongoDB_col = os.environ['MongoDB_Syslog_col'] # collection 名称 默认："syslog"
 
 ## 请把下面的 destLocX 改成系统所在位置的经度
 # destLocY 改成系统所在位置的经度

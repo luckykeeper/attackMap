@@ -12,20 +12,25 @@ from flask import Flask
 from flask import render_template
 # from pymongo import MongoClient
 from flask_cors import CORS
+import os
 
 ################################ 基础设定 ################################
 ## 调试模式 True = ON; False = OFF
-debug = False
+if "True" not in os.environ['debug']:
+	debug_choice = False
+else:
+	debug_choice = True
+debug = debug_choice
 
 ## MongoDB 数据库设定
-MongoDB_host = "127.0.0.1" # 数据库IP 形如："127.0.0.1"
-MongoDB_port = int(27017) # 数据库端口 形如："int(12345)"
-MongoDB_user = "root" # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
-MongoDB_password = "password" # 数据库密码 形如："password"
+MongoDB_host = os.environ['MongoDB_host'] # 数据库IP 形如："127.0.0.1"
+MongoDB_port = int(os.environ['MongoDB_port']) # 数据库端口 形如："int(12345)"
+MongoDB_user = os.environ['MongoDB_user'] # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
+MongoDB_password = os.environ['MongoDB_password'] # 数据库密码 形如："password"
 ### 要读写的数据库名称和 collection
 # 读出
-MongoDB_From_dbName = "show" # 数据库名称 默认："show"
-MongoDB_From_col = "bigScreen" # collection 名称 默认："bigScreen"
+MongoDB_From_dbName = os.environ['MongoDB_show_dbName'] # 数据库名称 默认："show"
+MongoDB_From_col = os.environ['MongoDB_show_col'] # collection 名称 默认："bigScreen"
 
 apiv1 = Flask(__name__)
 CORS(apiv1,support_credentials=True)

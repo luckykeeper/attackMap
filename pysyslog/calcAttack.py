@@ -20,26 +20,30 @@ import geoip2.database
 
 ################################ 基础设定 ################################
 ## 调试模式 True = ON; False = OFF
-debug = False
+if "True" not in os.environ['debug']:
+	debug_choice = False
+else:
+	debug_choice = True
+debug = debug_choice
 
 ## MongoDB 数据库设定
-MongoDB_host = "127.0.0.1" # 数据库IP 形如："127.0.0.1"
-MongoDB_port = int(27017) # 数据库端口 形如："int(12345)"
-MongoDB_user = "root" # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
-MongoDB_password = "password" # 数据库密码 形如："password"
+MongoDB_host = os.environ['MongoDB_host'] # 数据库IP 形如："127.0.0.1"
+MongoDB_port = int(os.environ['MongoDB_port']) # 数据库端口 形如："int(12345)"
+MongoDB_user = os.environ['MongoDB_user'] # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
+MongoDB_password = os.environ['MongoDB_password'] # 数据库密码 形如："password"
 ### 要读写的数据库名称和 collection
 # 读出
-MongoDB_From_dbName = "orgData" # 数据库名称 默认："orgData"
-MongoDB_From_col = "syslog" # collection 名称 默认："syslog"
+MongoDB_From_dbName = os.environ['MongoDB_Syslog_dbName']  # 数据库名称 默认："orgData"
+MongoDB_From_col = os.environ['MongoDB_Syslog_col'] # collection 名称 默认："syslog"
 # 写入
-MongoDB_to_dbName = "show" # 数据库名称 默认："show"
-MongoDB_to_col = "bigScreen" # collection 名称 默认："bigScreen"
+MongoDB_to_dbName = os.environ['MongoDB_show_dbName'] # 数据库名称 默认："show"
+MongoDB_to_col = os.environ['MongoDB_show_col'] # collection 名称 默认："bigScreen"
 
 ## 输出文件
-outputCsvName = '攻击IP.csv' # 默认：'攻击IP.csv'
+outputCsvName = os.environ['outputCsvName'] # 默认：'攻击IP.csv'
 
 ## mmdb 文件位置，可写相对位置，如使用 Cron 定时运行请写绝对位置
-mmdbLocation = '/home/pysyslog/GeoLite2-City.mmdb'
+mmdbLocation = '/usr/src/app/pysyslog/GeoLite2-City.mmdb'
 
 ################################ 程序开始 ################################
 

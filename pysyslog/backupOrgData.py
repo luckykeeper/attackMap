@@ -10,23 +10,28 @@
 # HBFU YYDS!
 
 from pymongo import MongoClient # MongoDB 连接器
+import os
 
 ################################ 基础设定 ################################
 ## 调试模式 True = ON; False = OFF
-debug = False
+if "True" not in os.environ['debug']:
+	debug_choice = False
+else:
+	debug_choice = True
+debug = debug_choice
 
 ## MongoDB 数据库设定
-MongoDB_host = "127.0.0.1" # 数据库IP 形如："127.0.0.1"
-MongoDB_port = int(27017) # 数据库端口 形如："int(12345)"
-MongoDB_user = "root" # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
-MongoDB_password = "password" # 数据库密码 形如："password"
+MongoDB_host = os.environ['MongoDB_host'] # 数据库IP 形如："127.0.0.1"
+MongoDB_port = int(os.environ['MongoDB_port']) # 数据库端口 形如："int(12345)"
+MongoDB_user = os.environ['MongoDB_user'] # 数据库用户 形如："user"，请使用 root 账户，否则可能产生意外的问题
+MongoDB_password = os.environ['MongoDB_password'] # 数据库密码 形如："password"
 ### 要读写的数据库名称和 collection
 # 读出
-MongoDB_From_dbName = "orgData" # 数据库名称 默认："orgData"
-MongoDB_From_col = "syslog" # collection 名称 默认："syslog"
+MongoDB_From_dbName = os.environ['MongoDB_Syslog_dbName']  # 数据库名称 默认："orgData"
+MongoDB_From_col = os.environ['MongoDB_Syslog_col'] # collection 名称 默认："syslog"
 # 写入
-MongoDB_to_dbName = "orgData" # 数据库名称 默认："orgData"
-MongoDB_to_col = "backup" # collection 名称 默认："backup"
+MongoDB_to_dbName = os.environ['MongoDB_Syslog_dbName'] # 数据库名称 默认："orgData"
+MongoDB_to_col = os.environ['MongoDB_Backup_col'] # collection 名称 默认："backup"
 
 ################################ 程序开始 ################################
 
