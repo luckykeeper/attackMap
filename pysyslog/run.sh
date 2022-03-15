@@ -28,4 +28,4 @@ echo " —————————————————程序开始运行！�
 echo "Powered By Luckykeeper<luckykeeper.site|luckykeeper@luckykeeper.site>"
 echo " —————————————————代码和人必有一个能润起来！———————————————————————"
 
-python3 /usr/src/app/pysyslog/sysloger.py
+crond && python3 /usr/src/app/pysyslog/sysloger.py

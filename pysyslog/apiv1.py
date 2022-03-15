@@ -163,7 +163,7 @@ def attackGlobalMap(apiv1QueryTimeMinutes):
 
 @apiv1.route('/', methods=['GET'])
 def index():
-    return render_template('接口文档.html')
+    return render_template('网络安全态势展示系统api接口文档.html')
 
 if __name__ == '__main__':
     apiv1.run(host='0.0.0.0',port=21109)

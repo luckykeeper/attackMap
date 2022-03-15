@@ -1,0 +1,19 @@
+# attackMap , 用于 Nginx 展示的容器镜像
+FROM nginx:1.21.6-alpine
+LABEL attackMap.image.author="Luckykeeper<https://luckykeeper.site|luckykeeper@luckykeeper.site>"
+WORKDIR /usr/src/app
+ENV pysyslog_ip='127.0.0.1' system_name='网络安全态势展示系统'
+
+RUN apk --update add tzdata wget && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" > /etc/timezone && \
+    apk del tzdata && \
+    rm -rf /var/cache/apk/* && \
+    wget https://wdv2.luckykeeper.site:44443/api/v3/file/get/15548/attackmap.tar?sign=HcrTZGkuN_hinBgD1rDnYzN1ZATmcdyjTpTjIP49h08%3D%3A0 -O /usr/src/app/attackMap.tar && \
+    tar -xvf /usr/src/app/attackMap.tar
+
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY ./attackmap.sh /usr/src/app/attackmap.sh
+EXPOSE 80/tcp
+CMD ["nginx","-g","daemon off;"]
+ENTRYPOINT  /bin/sh /usr/src/app/attackmap.sh ${pysyslog_ip} ${system_name}

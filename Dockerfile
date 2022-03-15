@@ -13,15 +13,16 @@ RUN apk --update add tzdata wget && \
     echo "Asia/Shanghai" > /etc/timezone && \
     apk del tzdata && \
     rm -rf /var/cache/apk/* && \
-    wget https://wdv2.luckykeeper.site:44443/api/v3/file/get/15542/GeoLite2-City.mmdb?sign=R4G17aOg1JXaSlpAyOD7AcEFI47Y8MFc7fB8kLP4WGU%3D%3A0 -O /usr/src/app/pysyslog/GeoLite2-City.mmdb
+    wget https://wdv2.luckykeeper.site:44443/api/v3/file/get/15542/GeoLite2-City.mmdb?sign=R4G17aOg1JXaSlpAyOD7AcEFI47Y8MFc7fB8kLP4WGU%3D%3A0 -O /usr/src/app/pysyslog/GeoLite2-City.mmdb && \
+    crontab /usr/src/app/pysyslog/cron.txt
 
 # RUN echo "$@reboot nohup python3 /usr/src/app/pysyslog/sysloger.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
 
-RUN echo "@reboot nohup python3 /usr/src/app/pysyslog/apiv1.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
-    echo "*/5 * * * * nohup python3 /usr/src/app/pysyslog/calcAttack.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
-    echo "4 8 * * * nohup python3 /usr/src/app/pysyslog/backupOrgData.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
-    echo "* 4 * * * nohup python3 /usr/src/app/pysyslog/deleteOldData.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
-    echo "3 8 * * * nohup python3 /usr/src/app/pysyslog/mailAlert.py > /dev/null 2>&1 &" >> /etc/crontabs/root
+# RUN echo "@reboot nohup python3 /usr/src/app/pysyslog/apiv1.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
+#     echo "*/5 * * * * nohup python3 /usr/src/app/pysyslog/calcAttack.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
+#     echo "4 8 * * * nohup python3 /usr/src/app/pysyslog/backupOrgData.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
+#     echo "* 4 * * * nohup python3 /usr/src/app/pysyslog/deleteOldData.py > /dev/null 2>&1 &" >> /etc/crontabs/root && \
+#     echo "3 8 * * * nohup python3 /usr/src/app/pysyslog/mailAlert.py > /dev/null 2>&1 &" >> /etc/crontabs/root
 
 # 相关环境变量
 ENV debug=False syslog_host='0.0.0.0' syslog_port='514' MongoDB_host='127.0.0.1' MongoDB_port='27017' MongoDB_user='root' MongoDB_password='zr2Nzu0BIXPx2C1i' MongoDB_Syslog_dbName='orgData' MongoDB_Syslog_col='syslog' MongoDB_Backup_col='backup' MongoDB_show_dbName='show' MongoDB_show_col='bigScreen' outputCsvName='攻击IP.csv' deletePeriods='365' email_sender='' mail_Password='' mail_Receiver='' email_sender_name='attackMap' email_Receiver_name='attackMapAdmin' email_smtp_server='smtp.qq.com' email_smtp_server_port='465' destLocX='115.506601' destLocY='38.926478'
