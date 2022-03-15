@@ -11,6 +11,10 @@ features:
   details: 组件模块化，按需部署
 - title: 支持广泛
   details: 支持 Syslog 的都能纳入，不支持 Syslog 的二次开发也很容易
+- title: 数据直观
+  details: 展示全球地图，中国地图支持数据下钻，可按市查看
+- title: 适合展示
+  details: 适配多种尺寸屏幕，大屏展示效果好
 - title: 文档详尽
   details: 详尽的文档带你玩转本项目，部署只属于自己的网络攻击地图
 ---
