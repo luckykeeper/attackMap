@@ -20,12 +20,12 @@ module.exports = {
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
     plugins: [
-      // [
-      //   '@vuepress/google-analytics',
-      //   {
-      //     'ga': 'UA-221056269-1' // UA-00000000-0
-      //   }
-      // ],
+      [
+        '@vuepress/google-analytics',
+        {
+          'ga': 'UA-221056269-3' // UA-00000000-0
+        }
+      ],
       ['@vuepress/pwa', {
         serviceWorker: true,
         updatePopup: {
@@ -56,15 +56,15 @@ module.exports = {
               '',
             ],
           },
-        // vssueConfig: {
-        //     platform: 'github',
-        //     owner: 'Luckykeeper',
-        //     repo: 'attackMap',
-        //     clientId: '1cd4ed1eb3240fb3ac49',
-        //     clientSecret: '00fdc3435f6a1bd301ba2b6986d3343452c45b3d',
-        //     autoCreateIssue: true,
-        //     admins: 'luckykeeper'
-        //   },
+        vssueConfig: {
+            platform: 'github',
+            owner: 'Luckykeeper',
+            repo: 'attackMap',
+            clientId: 'fdfbf78b29cf309478a8',
+            clientSecret: '66fa7ceaf6ccabaa461cc35d00d2a1b564580748',
+            autoCreateIssue: true,
+            admins: 'luckykeeper'
+          },
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'luckykeeper/attackMap',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为

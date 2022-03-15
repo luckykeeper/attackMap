@@ -7,10 +7,12 @@ actionLink: /intro/
 features:
 - title: 上手简单
   details: Docker pull 一键搞定！
+- title: 组件灵活
+  details: 组件模块化，按需部署
 - title: 支持广泛
   details: 支持 Syslog 的都能纳入，不支持 Syslog 的二次开发也很容易
 - title: 文档详尽
-  details: 详尽的文档带你玩转本项目
+  details: 详尽的文档带你玩转本项目，部署只属于自己的网络攻击地图
 ---
 
 <p align="center">
