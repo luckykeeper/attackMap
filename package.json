@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "vuepress-theme-reco": "^1.6.11"
+  },
+  "name": "attackmap_doc",
+  "version": "1.0.0",
+  "description": "AttackMap_Doc Doc WebSite",
+  "main": "index.js",
+  "repository": "https://github.com/luckykeeper/attackMap.git",
+  "author": "Luckykeeper <luckykeeper@luckykeeper.site>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx vuepress dev docs",
+    "build": "npx vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.9.7",
+    "@vuepress/plugin-pwa": "^1.9.7",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+  }
+}

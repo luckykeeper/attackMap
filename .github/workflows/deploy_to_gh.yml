@@ -1,0 +1,29 @@
+name: 部署到 GitHub Pages
+
+on:
+  push:
+    branches:
+      - document
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: install
+        run: yarn install 
+
+      - name: Build
+        run:  yarn build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.Token_For_attackMap_Doc_Website }}
+          BASE_BRANCH: document
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
