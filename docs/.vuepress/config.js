@@ -8,7 +8,7 @@ module.exports = {
     },
     
     head: [
-    // ['link', { rel: 'icon', href: '/images/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/images/attackmap_logo_small.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ['meta', { name: 'author', content: 'Luckykeeper' }],
     ['meta', { name: 'keywords', content: 'attackMap,网络攻击,地图,Network attack,map,文档,Documentation'}],
@@ -16,7 +16,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#42b983' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    // ['link', { rel: 'apple-touch-icon', href: '/images/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/images/attackmap_logo_small.png' }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ],
     plugins: [

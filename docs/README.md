@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /images/attackmap_logo.png
 heroText: attackMap Documentation
 tagline: 带你部署酷炫的网络攻击地图
 actionText: 马上开始
