@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "10cfed338a05e8dbefa6c94e3477b8bf"
+    "revision": "a1f2c0752e643855a98f5c210c856579"
   },
   {
     "url": "assets/css/0.styles.c44ba411.css",
@@ -58,8 +58,8 @@ self.__precacheManifest = [
     "revision": "5cc05504593a1f161e527783cfc6cffc"
   },
   {
-    "url": "assets/js/10.1aad5237.js",
-    "revision": "d323c2609461c5dfb70089784af16829"
+    "url": "assets/js/10.b1577ce5.js",
+    "revision": "ea4dc305408aaaf4a97d37bf68ce2adc"
   },
   {
     "url": "assets/js/11.c9b47e25.js",
@@ -74,8 +74,12 @@ self.__precacheManifest = [
     "revision": "aa99907201614c4f27c76882141b7bcd"
   },
   {
-    "url": "assets/js/14.29dd17b1.js",
-    "revision": "f498a332a94ba97aef7ea8066c39f8a1"
+    "url": "assets/js/14.1075c324.js",
+    "revision": "d96770825f899be990266e60dc86fcef"
+  },
+  {
+    "url": "assets/js/15.e5e17f57.js",
+    "revision": "218c129f54798ce3509644c5e80c6668"
   },
   {
     "url": "assets/js/2.0b3e1a47.js",
@@ -106,28 +110,36 @@ self.__precacheManifest = [
     "revision": "7ac28b0ea24bbea2473cbfa9dd52fd00"
   },
   {
-    "url": "assets/js/app.334e3c71.js",
-    "revision": "09456837018045bb18629ea78ed8c1c7"
+    "url": "assets/js/app.3c7e0ada.js",
+    "revision": "2f1e0d454bb4ce7985044b28a73000d2"
   },
   {
     "url": "categories/index.html",
-    "revision": "ed136524d99f770be267fe17b6887ba1"
+    "revision": "ad5c9ef2b42c4ce102e42075c3dbdda0"
   },
   {
     "url": "docs/index.html",
-    "revision": "65a8bdc175d23e93377814f0be4fbe63"
+    "revision": "687739b3372e927ae8119402cb379ffe"
+  },
+  {
+    "url": "images/intro/README/发现新内容可用.png",
+    "revision": "7e55bfbdccd891502dcc82c8cdddda80"
   },
   {
     "url": "index.html",
-    "revision": "2f07d567d61ae2e53eacf84f37faf5e4"
+    "revision": "e8e2b1e739b31d8e75d55feaa257169e"
+  },
+  {
+    "url": "intro/index.html",
+    "revision": "e8966d6c52c0b41efd19cb18997d14b9"
   },
   {
     "url": "tag/index.html",
-    "revision": "c77fdddbcb60252858a0f845ecc4ef8b"
+    "revision": "c9f48d0bff86f589e0b1e231526db4d4"
   },
   {
     "url": "timeline/index.html",
-    "revision": "420c1dd0b672c0e1d11e7f1c06291dbb"
+    "revision": "d2f2778a6e9134fd1fc4d6e1dbfe21d3"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
