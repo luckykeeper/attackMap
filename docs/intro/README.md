@@ -19,7 +19,7 @@ updated: 2022-03-16 20:06:00
 
 这个按钮长这个样子
 
-> ![发现新内容可用](/Doc/images/intro/README/发现新内容可用.png)
+> ![发现新内容可用](/attackMap/images/intro/README/发现新内容可用.png)
 
 在页面下滑后，点击屏幕右下角的小火箭🚀，就可以返回页面顶部
 
