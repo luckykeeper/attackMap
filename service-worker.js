@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "ac2857b04a91800e16bb8bfeca4b7126"
+    "revision": "e301f93931453c87a851dd2b4f635647"
   },
   {
     "url": "assets/css/0.styles.c44ba411.css",
@@ -74,8 +74,8 @@ self.__precacheManifest = [
     "revision": "aa99907201614c4f27c76882141b7bcd"
   },
   {
-    "url": "assets/js/14.d13179af.js",
-    "revision": "29b1a320fd385e34ab0c6a8911e2409e"
+    "url": "assets/js/14.c45a0447.js",
+    "revision": "0bdd11d239488b2e71cb4b8d5688674c"
   },
   {
     "url": "assets/js/15.e5e17f57.js",
@@ -110,16 +110,16 @@ self.__precacheManifest = [
     "revision": "7ac28b0ea24bbea2473cbfa9dd52fd00"
   },
   {
-    "url": "assets/js/app.92b35d4b.js",
-    "revision": "806e48685e96c2bfa42f3fd87229c6ba"
+    "url": "assets/js/app.6af7ad16.js",
+    "revision": "070d9a139c26a076ef9f5d53c62deaaf"
   },
   {
     "url": "categories/index.html",
-    "revision": "d59f28930934ea23bb55407484bdc3a1"
+    "revision": "1205f858ddeb6ff255ab809d74db4f6d"
   },
   {
     "url": "docs/index.html",
-    "revision": "21e0a7d6efc08d3dfd04b95f2ce9bd16"
+    "revision": "7a47b75b4efa1a628cfd75269a13b17d"
   },
   {
     "url": "images/attackmap_logo_small.png",
@@ -135,19 +135,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "dc3d0d98dfe9bda6c2404a4143727ca1"
+    "revision": "36ce60d9827665d0a7d9a2d05580c5b8"
   },
   {
     "url": "intro/index.html",
-    "revision": "ada38c4f00a71833c7b8460840e07a8d"
+    "revision": "a1eba507d88b9ad713fb5f983bf79631"
   },
   {
     "url": "tag/index.html",
-    "revision": "f07d99ae9b61ba002d0a17b6ad833e19"
+    "revision": "d9387b8c4603640c10251cf791b87ca0"
   },
   {
     "url": "timeline/index.html",
-    "revision": "212fdfc79e6205e323d804f19871fc95"
+    "revision": "7a7b4530f81607b8ceb7a1563b1d0f41"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
