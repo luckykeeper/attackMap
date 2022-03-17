@@ -5,10 +5,6 @@
 
 ------
 
-正在整理源码，稍后上传
-
-Organizing source code and will be update in few days……
-
 # 简介
 
 [前往导航](#导航)
