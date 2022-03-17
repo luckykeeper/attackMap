@@ -1,5 +1,8 @@
 name: 部署到 GitHub Pages
 
+concurrency:
+  cancel-in-progress: true
+
 on:
   push:
     branches:
