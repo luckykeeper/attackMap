@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e301f93931453c87a851dd2b4f635647"
+    "revision": "47fa72f7f0320a970370386fdb0b3143"
   },
   {
     "url": "assets/css/0.styles.c44ba411.css",
@@ -58,28 +58,36 @@ self.__precacheManifest = [
     "revision": "5cc05504593a1f161e527783cfc6cffc"
   },
   {
-    "url": "assets/js/10.b1577ce5.js",
-    "revision": "ea4dc305408aaaf4a97d37bf68ce2adc"
+    "url": "assets/js/10.f3e8b732.js",
+    "revision": "6e9f53cdb68e363e62c917fa9734ad43"
   },
   {
-    "url": "assets/js/11.c9b47e25.js",
-    "revision": "0a149b9ac36ce98cd1cfaf37539807c9"
+    "url": "assets/js/11.d6e4fbdd.js",
+    "revision": "6d0e87a2de61bb125b04202cfeee450c"
   },
   {
     "url": "assets/js/12.aab13852.js",
     "revision": "cac7cfd40736f95790700dc4420949ae"
   },
   {
-    "url": "assets/js/13.df354372.js",
-    "revision": "aa99907201614c4f27c76882141b7bcd"
+    "url": "assets/js/13.bffa0715.js",
+    "revision": "5ad31a084fa34553aa309597d5e35e48"
   },
   {
-    "url": "assets/js/14.c45a0447.js",
-    "revision": "0bdd11d239488b2e71cb4b8d5688674c"
+    "url": "assets/js/14.fccccfcb.js",
+    "revision": "203e9f934a86ac33aa73a82f5a3d382a"
   },
   {
-    "url": "assets/js/15.e5e17f57.js",
-    "revision": "218c129f54798ce3509644c5e80c6668"
+    "url": "assets/js/15.21c446da.js",
+    "revision": "db948eef63c3067acc3e126c75a51370"
+  },
+  {
+    "url": "assets/js/16.494db04b.js",
+    "revision": "487dc789a798afb3509faf72ec8cd9ee"
+  },
+  {
+    "url": "assets/js/17.36c44a1e.js",
+    "revision": "9eb8b44007dfa1abca83a3d725f06422"
   },
   {
     "url": "assets/js/2.0b3e1a47.js",
@@ -110,16 +118,24 @@ self.__precacheManifest = [
     "revision": "7ac28b0ea24bbea2473cbfa9dd52fd00"
   },
   {
-    "url": "assets/js/app.6af7ad16.js",
-    "revision": "070d9a139c26a076ef9f5d53c62deaaf"
+    "url": "assets/js/app.5653956a.js",
+    "revision": "b52cb033bcad2d0e9ecca3b0d5235a5b"
   },
   {
     "url": "categories/index.html",
-    "revision": "1205f858ddeb6ff255ab809d74db4f6d"
+    "revision": "fef1771d6646e043551d80be43501c06"
+  },
+  {
+    "url": "deployment/index.html",
+    "revision": "b88cdacd5140e7fa4b6abe91a5c2a5fb"
+  },
+  {
+    "url": "deployment/数据源准备.html",
+    "revision": "a9a113501b4c52945fc2c61fd8f9bc1b"
   },
   {
     "url": "docs/index.html",
-    "revision": "7a47b75b4efa1a628cfd75269a13b17d"
+    "revision": "295a7b5c9320ec1df2a458058e5d0aa3"
   },
   {
     "url": "images/attackmap_logo_small.png",
@@ -135,19 +151,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "36ce60d9827665d0a7d9a2d05580c5b8"
+    "revision": "f02d7dbe83559770aa6b25233d6d85ad"
   },
   {
     "url": "intro/index.html",
-    "revision": "a1eba507d88b9ad713fb5f983bf79631"
+    "revision": "dddf87df04601d5bf824b8d1e34889f5"
   },
   {
     "url": "tag/index.html",
-    "revision": "d9387b8c4603640c10251cf791b87ca0"
+    "revision": "106bd8eeaf89bad2c73c6977e9204c28"
   },
   {
     "url": "timeline/index.html",
-    "revision": "7a7b4530f81607b8ceb7a1563b1d0f41"
+    "revision": "7dd871a8e3bc3464bff3ef3204a90601"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
