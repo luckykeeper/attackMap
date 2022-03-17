@@ -1,6 +1,7 @@
 name: 部署到 GitHub Pages
 
 concurrency:
+  group: production
   cancel-in-progress: true
 
 on:
