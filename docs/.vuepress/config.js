@@ -55,6 +55,7 @@ module.exports = {
           ],'/deployment/': [
               '',
               '数据源准备',
+              '使用源码部署',
             ],
           },
         vssueConfig: {
