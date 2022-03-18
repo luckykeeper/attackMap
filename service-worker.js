@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f876d37dd9d04a9bfcaf57ead532c195"
+    "revision": "81d4b30d97215f051e961e543558e140"
   },
   {
     "url": "assets/css/0.styles.c44ba411.css",
@@ -126,32 +126,32 @@ self.__precacheManifest = [
     "revision": "7ac28b0ea24bbea2473cbfa9dd52fd00"
   },
   {
-    "url": "assets/js/app.1a359b2d.js",
-    "revision": "fc4368a0b4b8af43d7954a582c1ed681"
+    "url": "assets/js/app.eb7415b0.js",
+    "revision": "6e6a3bd6bdd8e7d95915c4ef34e17550"
   },
   {
     "url": "categories/index.html",
-    "revision": "8147f9b7d0cdfffafd460c63827f1f54"
+    "revision": "0d1216dc2adb8dbd758259e3ad8642d2"
   },
   {
     "url": "deployment/index.html",
-    "revision": "bcd92be54933657c1f34b7913ce0169f"
+    "revision": "44a7dee9a88feb4b80d4512084e7ef84"
   },
   {
     "url": "deployment/使用Docker部署.html",
-    "revision": "3d541555f07b64ce5f0bf816e3e130ab"
+    "revision": "26713626966cc369b6d2fb54bcd496a0"
   },
   {
     "url": "deployment/使用源码部署.html",
-    "revision": "bc618791332c9a70df3ab7fea58728d6"
+    "revision": "143bfb885b5891aba9b89b0fefa9f835"
   },
   {
     "url": "deployment/数据源准备.html",
-    "revision": "a963f9684f0d8ba97d626ade9116354d"
+    "revision": "bc770cb59be4ede6c31233aafcacc6d5"
   },
   {
     "url": "docs/index.html",
-    "revision": "06623b783056cd4450e4fad083eaab83"
+    "revision": "0157f8df30be07e2ddece4caa50de3ab"
   },
   {
     "url": "images/attackmap_logo_small.png",
@@ -162,24 +162,28 @@ self.__precacheManifest = [
     "revision": "db365422672c47d63cddb490ec141d05"
   },
   {
+    "url": "images/header-tou.jpg",
+    "revision": "c8729cf219f10862eb948b2c82896110"
+  },
+  {
     "url": "images/intro/README/发现新内容可用.png",
     "revision": "7e55bfbdccd891502dcc82c8cdddda80"
   },
   {
     "url": "index.html",
-    "revision": "57c3f3ee790e012a1b01ecc0893ee6c8"
+    "revision": "fbcfdf8c5d4ea4ce886eae417c7f33ac"
   },
   {
     "url": "intro/index.html",
-    "revision": "295203647d2f0c9b248886e18031e7e4"
+    "revision": "524b40924fe00057f17d9974065326a6"
   },
   {
     "url": "tag/index.html",
-    "revision": "27ddf4eae75d72516528fd7a3d9d018d"
+    "revision": "8c116add2059ee7b51e005ccbc838648"
   },
   {
     "url": "timeline/index.html",
-    "revision": "fb97b001b14ad7f99a3c5b7dcd5d3925"
+    "revision": "e71bcbd313035df19750f5d0b72ee21c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
