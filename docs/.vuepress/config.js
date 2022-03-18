@@ -56,6 +56,7 @@ module.exports = {
               '',
               '数据源准备',
               '使用源码部署',
+              '使用Docker部署',
             ],
           },
         vssueConfig: {
