@@ -14,9 +14,9 @@ updated: 2022-03-18 10:52:00
 
 ## 环境准备
 
-推荐配置仍和源码部署一样，Fedora 35 和 CentOS7 都有进行测试，其它系统请酌情使用
+推荐配置仍和源码部署一样，Fedora 35 和 CentOS 7 都有进行测试，其它系统请酌情使用
 
-对于 CentOS7 ，你需要添加一个 docker 源， Fedora 不需要，可以直接安装
+对于 CentOS 7 ，你需要添加一个 docker 源， Fedora 不需要，可以直接安装
 
 ```bash
 yum install -y yum-utils device-mapper-persistent-data lvm2
