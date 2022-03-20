@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "81d4b30d97215f051e961e543558e140"
+    "revision": "3151d05739b612c8361081d6c61a8754"
   },
   {
     "url": "assets/css/0.styles.c44ba411.css",
@@ -58,8 +58,8 @@ self.__precacheManifest = [
     "revision": "5cc05504593a1f161e527783cfc6cffc"
   },
   {
-    "url": "assets/js/10.f5498ad3.js",
-    "revision": "507fb814762b54a0b12b8fd6489f12bc"
+    "url": "assets/js/10.f9cdd85f.js",
+    "revision": "a9ef75718b25b27d6da3c82e0759e437"
   },
   {
     "url": "assets/js/11.80fdd6e7.js",
@@ -82,24 +82,28 @@ self.__precacheManifest = [
     "revision": "0b1add242ddd243aa460371e7cad4ac9"
   },
   {
-    "url": "assets/js/16.931b4a68.js",
-    "revision": "391a7cb9dd4199a09ed2d901a483ff4f"
+    "url": "assets/js/16.ab77882b.js",
+    "revision": "00e36646c8e49a95e7c7a1f7cf5b77b9"
   },
   {
-    "url": "assets/js/17.aaeea89d.js",
-    "revision": "a303ed156b33a0a5d39f90e39b316361"
+    "url": "assets/js/17.245e114b.js",
+    "revision": "9659f6a031519351d9622956d556aeee"
   },
   {
-    "url": "assets/js/18.15eabc35.js",
-    "revision": "35546f6dd843df43dea364a2b4ffaf24"
+    "url": "assets/js/18.467b3d48.js",
+    "revision": "a26d7b28f9d0711c93a959d76c8c4499"
   },
   {
-    "url": "assets/js/19.ad78c08d.js",
-    "revision": "487a3f5d78be67b0555f30e493c939c7"
+    "url": "assets/js/19.6d744cb5.js",
+    "revision": "2428b0c642627f1658fc253ffe6543fd"
   },
   {
     "url": "assets/js/2.3b0103f2.js",
     "revision": "681157989621860145cc4901087fb8f6"
+  },
+  {
+    "url": "assets/js/20.81c8c617.js",
+    "revision": "30107cd716a9c101be29d38a4a912393"
   },
   {
     "url": "assets/js/4.3106a90a.js",
@@ -126,32 +130,36 @@ self.__precacheManifest = [
     "revision": "7ac28b0ea24bbea2473cbfa9dd52fd00"
   },
   {
-    "url": "assets/js/app.eb7415b0.js",
-    "revision": "6e6a3bd6bdd8e7d95915c4ef34e17550"
+    "url": "assets/js/app.10925af0.js",
+    "revision": "316a78543ca68773ef5d4edfcc8dc137"
   },
   {
     "url": "categories/index.html",
-    "revision": "0d1216dc2adb8dbd758259e3ad8642d2"
+    "revision": "389f8de6555e62c69456eab9220a74bc"
   },
   {
     "url": "deployment/index.html",
-    "revision": "44a7dee9a88feb4b80d4512084e7ef84"
+    "revision": "a7cbb301bfa90b2cf57e68eb7a74c35f"
   },
   {
     "url": "deployment/使用Docker部署.html",
-    "revision": "26713626966cc369b6d2fb54bcd496a0"
+    "revision": "311df9509851b6ad9faafc37c0a19758"
   },
   {
     "url": "deployment/使用源码部署.html",
-    "revision": "143bfb885b5891aba9b89b0fefa9f835"
+    "revision": "51d8a2c5a23b4bcd538980c2afb1cd38"
   },
   {
     "url": "deployment/数据源准备.html",
-    "revision": "bc770cb59be4ede6c31233aafcacc6d5"
+    "revision": "d9fc715b2daf06fcbafb3755103cd1fa"
+  },
+  {
+    "url": "dev/index.html",
+    "revision": "be9d5785e2a076c38ad004e0b83d87f0"
   },
   {
     "url": "docs/index.html",
-    "revision": "0157f8df30be07e2ddece4caa50de3ab"
+    "revision": "5bbf3172c98b86c489766eb5efac7c91"
   },
   {
     "url": "images/attackmap_logo_small.png",
@@ -171,19 +179,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "fbcfdf8c5d4ea4ce886eae417c7f33ac"
+    "revision": "1acf9a98f9477f487ece870a6022881e"
   },
   {
     "url": "intro/index.html",
-    "revision": "524b40924fe00057f17d9974065326a6"
+    "revision": "9bb00be259a0d72c6871b15a8299a7f5"
   },
   {
     "url": "tag/index.html",
-    "revision": "8c116add2059ee7b51e005ccbc838648"
+    "revision": "339652faa114dfc523a2d8831ec7be48"
   },
   {
     "url": "timeline/index.html",
-    "revision": "e71bcbd313035df19750f5d0b72ee21c"
+    "revision": "e9850422e349e320cd85c4dcd3d301b8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
