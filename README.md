@@ -11,6 +11,8 @@
 
 你可能看过很多酷炫的网络攻击地图，就像卡巴斯基的[这个](https://cybermap.kaspersky.com/)，但是一直没有什么开源的、能够自建的网络攻击地图，本项目就能为你带来为你的网络量身定做的网络攻击地图
 
+[介绍和快速部署请看这里](https://luckykeeper.github.io/attackMap/deployment/%E4%BD%BF%E7%94%A8Docker%E9%83%A8%E7%BD%B2.html#docker-部署视频)
+
 # 导航
 
 - [如何使用](#如何使用)
