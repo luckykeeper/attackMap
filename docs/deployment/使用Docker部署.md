@@ -1,7 +1,7 @@
 ---
 title: 使用Docker部署
 date: 2022-03-18 10:52:00
-updated: 2022-03-18 10:52:00
+updated: 2022-03-21 18:19:00
 ---
 
 ::: tip
@@ -11,6 +11,12 @@ updated: 2022-03-18 10:52:00
 ::: tip
 在进行 Docker 部署时，请先了解上一小节：使用源码部署
 :::
+
+## Docker 部署视频
+
+（原先打算放B站的但是没有过审，所以直接放在下面，视频挂了喊我）
+
+<video id="video" width="560" height="315" controls="" preload="none" > <source id="mp4" src="https://oa.hbfu.edu.cn/backstage/filecenter/file/main::086e0280ed5d4acaa41ab29a99c8f3f6" type="video/mp4"> </video>
 
 ## 环境准备
 
