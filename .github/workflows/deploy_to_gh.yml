@@ -12,11 +12,18 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: '16.16.0'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+
+      - name: npm & node version
+        run:  npm -v && node -v
 
       - name: install
         run: npx browserslist@latest --update-db && npm install && npx browserslist@latest --update-db && npm install
