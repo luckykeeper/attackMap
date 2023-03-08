@@ -19,10 +19,7 @@ jobs:
           persist-credentials: false
 
       - name: install
-        run: npm install 
-
-      - name: update-browserslist
-        run:  npx browserslist@latest --update-db
+        run: npx browserslist@latest --update-db && npm install && npx browserslist@latest --update-db && npm install
 
       - name: Build
         run:  npm run build
