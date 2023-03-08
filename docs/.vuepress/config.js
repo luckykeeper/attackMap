@@ -109,7 +109,7 @@ module.exports = {
               ],
               
             },
-            {text: '作者博客', link: 'https://luckykeeper.site', target:'_blank' ,icon:'reco-home'},
+            {text: '作者博客', link: 'http://luckykeeper.site', target:'_blank' ,icon:'reco-home'},
           ],  
       }
 }
